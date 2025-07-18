@@ -2,9 +2,215 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rishi Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi Construction Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f9;
+      color: #2c3e50;
+    }
+    .hero {
+      background: linear-gradient(to right, #0a3d62, #f39c12);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    .section {
+      padding: 20px 20px;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      color: #0a3d62;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .btn-blue {
+      background-color: #0a3d62;
+      color: white;
+      border: none;
+    }
+    .btn-blue:hover {
+      background-color: #083354;
+      color: white;
+    }
+    .stats-wrapper {
+      margin-top: 30px;
+    }
+    .stats-box {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .stats-box .col-md-3 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px 0;
+    }
+    .section-divider {
+      border: 0;
+      border-top: 2px solid #0a3d62;
+      margin: 20px 0;
+    }
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Rishi Construction</h1>
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="L2.png" alt="Rishi Construction Logo">
+    <h1 class="display-5 fw-bold">Rishi Construction Company</h1>
+    <p class="lead">Building the Future with Innovation</p>
+    <div class="mt-4">
+      <a href="#projects" class="btn btn-blue me-2">View Projects</a>
+      <a href="#contact" class="btn btn-blue me-2">Get in Touch</a>
+      <a href="#downloads" class="btn btn-blue">Request Quote</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Stats -->
+    <div class="stats-wrapper">
+      <div class="section text-center stats-box">
+        <div class="row">
+          <div class="col-md-3">Years of Experience: 15+</div>
+          <div class="col-md-3">Projects Completed: 120+</div>
+          <div class="col-md-3">Clients: 50+</div>
+          <div class="col-md-3">Cities Covered: 30+</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- About Us -->
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>Rishi Construction Company was established in 2010, known for engineering excellence and timely delivery. We are committed to quality, sustainability, and transparency.</p>
+      <p><strong>Mission:</strong> Delivering world-class projects that improve lives.</p>
+      <p><strong>Vision:</strong> To be a national leader in infrastructure development with sustainable practices.</p>
+      <p><strong>Leadership:</strong> Led by experienced civil engineers and visionary directors.</p>
+      <p><strong>Quality & Safety:</strong> ISO certified, strong adherence to safety protocols.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Services -->
+    <div class="section" id="services">
+      <h2>Our Expertise</h2>
+      <ul>
+        <li>Road Construction</li>
+        <li>Slope Stabilization</li>
+        <li>Retaining Structures</li>
+        <li>RCC Buildings</li>
+        <li>EPC or Design-Build Contracts</li>
+        <li>Railway Infrastructure</li>
+        <li>Precast & Modular Construction</li>
+      </ul>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="row gallery">
+        <div class="col-md-4">
+          <img src="i1.jpeg" alt="Project 1">
+        </div>
+        <div class="col-md-4">
+          <img src="i2.jpeg" alt="Project 2">
+        </div>
+        <div class="col-md-4">
+          <img src="i3.jpeg" alt="Project 3">
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Clients -->
+    <div class="section" id="clients">
+      <h2>Our Clients</h2>
+      <div class="row text-center align-items-start">
+        <div class="col-md-3 col-6 mb-4">
+          <img src="AFCONS.jpg" alt="Afcons Logo" class="img-fluid mb-2" style="max-height: 80px;">
+          <p><strong>Afcons Infrastructure Ltd.</strong><br>Major EPC contractor for metro, bridges & ports; part of Shapoorji Pallonji Group.</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <img src="ASHOKA.png" alt="Ashoka Buildcon Logo" class="img-fluid mb-2" style="max-height: 80px;">
+          <p><strong>Ashoka Buildcon Ltd.</strong><br>Leading roads & highway developer—36+ PPP/EPC projects across India.</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <img src="IRCON.png" alt="Ircon Logo" class="img-fluid mb-2" style="max-height: 80px;">
+          <p><strong>Ircon International Ltd.</strong><br>Govt. of India rail specialist—civil, signalling, bridges, and station infrastructure.</p>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <img src="HCC.jpg" alt="HCC Logo" class="img-fluid mb-2" style="max-height: 80px;">
+          <p><strong>HCC Ltd.</strong><br>Major infrastructure EPC player in roads, hydro & urban development, with prominent BOT projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Careers -->
+    <div class="section" id="careers">
+      <h2>Careers</h2>
+      <p>We are hiring! Explore current job openings or send your resume to <strong></strong><b>rishiconstructionco01@gmail.com</b></p>
+      <p>We offer internships and training for fresh graduates too!!!</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Head Office:</strong>Chowadhi Road, Sec-E, Sainik Colony, Jammu, Jammu & Kashmir</p>
+      <p><strong>Email:</strong> rishiconstructionco01@gmail.com | 
+      <strong>Phone:</strong> +91-8082089442</p>
+      <p><strong>WhatsApp:</strong> +91-7298369358</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Latest Updates -->
+    <div class="section" id="news">
+      <h2>Latest Updates</h2>
+      
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Downloads -->
+    <div class="section" id="downloads">
+      <h2>Downloads</h2>
+      <p><a href="CompanyProfile.pdf" class="btn btn-blue mb-2" download>Download Company Profile (PDF)</a></p>
+      <p><a href="Brochure2025.pdf" class="btn btn-blue" download>Download Brochure</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Rishi Construction Company. All rights reserved.
+  </footer>
 </body>
 </html>

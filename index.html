@@ -19,33 +19,32 @@
       text-align: center;
     }
     .hero img {
-      width: 100px;
-      margin-bottom: 20px;
+      width: 80px;
+      margin-bottom: 15px;
     }
     .section {
-      padding: 20px 20px;
+      padding: 20px 15px;
     }
     .section h2 {
       margin-bottom: 20px;
       color: #0a3d62;
+      font-size: 1.5rem;
     }
     .gallery img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     .btn-blue {
       background-color: #0a3d62;
       color: white;
       border: none;
+      margin-bottom: 10px;
     }
     .btn-blue:hover {
       background-color: #083354;
       color: white;
-    }
-    .stats-wrapper {
-      margin-top: 30px;
     }
     .stats-box {
       background-color: #0a3d62;
@@ -54,9 +53,10 @@
       border-radius: 12px;
       text-align: center;
     }
+    .stats-box .col-6,
     .stats-box .col-md-3 {
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 10px 0;
     }
     .section-divider {
@@ -69,18 +69,27 @@
       color: white;
       text-align: center;
       padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero p.lead {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Hero Section -->
   <div class="hero">
-    <img src="L2.png" alt="Rishi Construction Logo">
-    <h1 class="display-5 fw-bold">Rishi Construction Company</h1>
+    <img src="L2.png" alt="Rishi Construction Logo" class="img-fluid">
+    <h1 class="fw-bold">Rishi Construction Company</h1>
     <p class="lead">Building the Future with Innovation</p>
-    <div class="mt-4">
-      <a href="#projects" class="btn btn-blue me-2">View Projects</a>
-      <a href="#contact" class="btn btn-blue me-2">Get in Touch</a>
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+      <a href="#projects" class="btn btn-blue">View Projects</a>
+      <a href="#contact" class="btn btn-blue">Get in Touch</a>
       <a href="#downloads" class="btn btn-blue">Request Quote</a>
     </div>
   </div>
@@ -89,14 +98,12 @@
   <div class="container">
 
     <!-- Stats -->
-    <div class="stats-wrapper">
-      <div class="section text-center stats-box">
-        <div class="row">
-          <div class="col-md-3">Years of Experience: 15+</div>
-          <div class="col-md-3">Projects Completed: 120+</div>
-          <div class="col-md-3">Clients: 50+</div>
-          <div class="col-md-3">Cities Covered: 30+</div>
-        </div>
+    <div class="stats-box my-4">
+      <div class="row">
+        <div class="col-6 col-md-3">Years of Experience: 15+</div>
+        <div class="col-6 col-md-3">Projects Completed: 120+</div>
+        <div class="col-6 col-md-3">Clients: 50+</div>
+        <div class="col-6 col-md-3">Cities Covered: 30+</div>
       </div>
     </div>
 
@@ -134,14 +141,14 @@
     <div class="section" id="projects">
       <h2>Projects</h2>
       <div class="row gallery">
-        <div class="col-md-4">
-          <img src="i1.jpeg" alt="Project 1">
+        <div class="col-12 col-md-4">
+          <img src="i1.jpeg" alt="Project 1" class="img-fluid">
         </div>
-        <div class="col-md-4">
-          <img src="i2.jpeg" alt="Project 2">
+        <div class="col-12 col-md-4">
+          <img src="i2.jpeg" alt="Project 2" class="img-fluid">
         </div>
-        <div class="col-md-4">
-          <img src="i3.jpeg" alt="Project 3">
+        <div class="col-12 col-md-4">
+          <img src="i3.jpeg" alt="Project 3" class="img-fluid">
         </div>
       </div>
     </div>
@@ -151,22 +158,22 @@
     <!-- Clients -->
     <div class="section" id="clients">
       <h2>Our Clients</h2>
-      <div class="row text-center align-items-start">
-        <div class="col-md-3 col-6 mb-4">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-4">
           <img src="AFCONS.jpg" alt="Afcons Logo" class="img-fluid mb-2" style="max-height: 80px;">
-          <p><strong>Afcons Infrastructure Ltd.</strong><br>Major EPC contractor for metro, bridges & ports; part of Shapoorji Pallonji Group.</p>
+          <p><strong>Afcons Infrastructure Ltd.</strong><br>Major EPC contractor for metro, bridges & ports.</p>
         </div>
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3 mb-4">
           <img src="ASHOKA.png" alt="Ashoka Buildcon Logo" class="img-fluid mb-2" style="max-height: 80px;">
-          <p><strong>Ashoka Buildcon Ltd.</strong><br>Leading roads & highway developer—36+ PPP/EPC projects across India.</p>
+          <p><strong>Ashoka Buildcon Ltd.</strong><br>Leading roads & highway developer across India.</p>
         </div>
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3 mb-4">
           <img src="IRCON.png" alt="Ircon Logo" class="img-fluid mb-2" style="max-height: 80px;">
-          <p><strong>Ircon International Ltd.</strong><br>Govt. of India rail specialist—civil, signalling, bridges, and station infrastructure.</p>
+          <p><strong>Ircon International Ltd.</strong><br>Govt. rail specialist in civil, signalling & stations.</p>
         </div>
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3 mb-4">
           <img src="HCC.jpg" alt="HCC Logo" class="img-fluid mb-2" style="max-height: 80px;">
-          <p><strong>HCC Ltd.</strong><br>Major infrastructure EPC player in roads, hydro & urban development, with prominent BOT projects.</p>
+          <p><strong>HCC Ltd.</strong><br>Key player in roads, hydro & urban development.</p>
         </div>
       </div>
     </div>
@@ -176,7 +183,7 @@
     <!-- Careers -->
     <div class="section" id="careers">
       <h2>Careers</h2>
-      <p>We are hiring! Explore current job openings or send your resume to <strong></strong><b>rishiconstructionco01@gmail.com</b></p>
+      <p>We are hiring! Explore current job openings or send your resume to <b>rishiconstructionco01@gmail.com</b></p>
       <p>We offer internships and training for fresh graduates too!!!</p>
     </div>
 
@@ -185,8 +192,8 @@
     <!-- Contact -->
     <div class="section" id="contact">
       <h2>Contact Us</h2>
-      <p><strong>Head Office:</strong>Chowadhi Road, Sec-E, Sainik Colony, Jammu, Jammu & Kashmir</p>
-      <p><strong>Email:</strong> rishiconstructionco01@gmail.com | 
+      <p><strong>Head Office:</strong> Chowadhi Road, Sec-E, Sainik Colony, Jammu, Jammu & Kashmir</p>
+      <p><strong>Email:</strong> rishiconstructionco01@gmail.com<br>
       <strong>Phone:</strong> +91-8082089442</p>
       <p><strong>WhatsApp:</strong> +91-7298369358</p>
     </div>
@@ -196,7 +203,7 @@
     <!-- Latest Updates -->
     <div class="section" id="news">
       <h2>Latest Updates</h2>
-      
+      <p>(You can add news or updates here...)</p>
     </div>
 
     <hr class="section-divider">
@@ -204,7 +211,7 @@
     <!-- Downloads -->
     <div class="section" id="downloads">
       <h2>Downloads</h2>
-      <p><a href="CompanyProfile.pdf" class="btn btn-blue mb-2" download>Download Company Profile (PDF)</a></p>
+      <p><a href="CompanyProfile.pdf" class="btn btn-blue" download>Download Company Profile (PDF)</a></p>
       <p><a href="Brochure2025.pdf" class="btn btn-blue" download>Download Brochure</a></p>
     </div>
   </div>
